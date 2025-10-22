@@ -3,9 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Projets • Jean Emmanuel Ehuy</title>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<title>Projets — Jean Emmanuel Ehuy — Portfolio</title>
 <link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/carousel.js"></script>
+<script src="assets/js/theme.js"></script>
 </head>
 <body>
 <header class="site-header">
@@ -25,44 +26,90 @@
 </header>
 <main class="container">
 
-<section class="section">
-  <h2 class="section-title gradient-underline">Projets</h2>
-  <div class="project-grid">
-    <article class="project-card">
-      <h3 class="project-title">Gestion de dépenses étudiantes</h3>
-      <p class="project-desc">Application web pour aider les étudiants à gérer leurs dépenses et optimiser leurs économies, déployée en production.</p>
-      <p class="project-tech">Java, Spring Boot, Spring Security, Spring Cloud, React, Material UI, Docker, Nginx, Kubernetes</p>
-    </article>
-    <article class="project-card">
-      <h3 class="project-title">Galerie de vidéos de piano</h3>
-      <p class="project-desc">Galerie d’exposition de mes vidéos de piano avec interface moderne et performances optimisées, déployée en production.</p>
-      <p class="project-tech">React, TypeScript, Material UI, CI/CD</p>
-    </article>
-    <article class="project-card">
-      <h3 class="project-title">E‑commerce distribué</h3>
-      <p class="project-desc">Système e‑commerce en architecture hexagonale avec microservices Spring Boot interconnectés via REST et Kafka.</p>
-      <p class="project-tech">Java, Spring Boot, Kafka, JPA, Maven, Docker, Architecture Hexagonale</p>
-    </article>
-  </div>
+<h1 class="page-title gradient-underline">Projets</h1>
+
+<section class="projects-grid">
+
+  <article class="project-card large">
+    <div class="carousel" id="expense-carousel">
+      <div class="carousel-track">
+        <img src="assets/img/5854c6f0-6738-4741-8d39-526dece695af.png" alt="Expense App 1">
+        <img src="assets/img/01901237-d785-4523-89f1-00cbcca2ef2c.png" alt="Expense App 2">
+        <img src="assets/img/c5303c0e-6482-407d-a32e-fe3261d0c341.png" alt="Expense App 3">
+      </div>
+      <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    <h2>Gestion de dépenses étudiantes</h2>
+    <p>Application web pour aider les étudiants à gérer leurs dépenses et optimiser leurs économies.</p>
+    <p class="stack">Java, Spring Boot, Spring Security, Spring Cloud, React, Material UI, Docker, Nginx, Kubernetes</p>
+    <a href="https://jean-emmanuel-diap.com/expense-app" target="_blank" class="btn primary" rel="noopener">Voir en ligne</a>
+  </article>
+
+  <article class="project-card large">
+    <img src="assets/img/piano.png" alt="Piano Gallery" class="project-image">
+    <h2>Galerie de vidéos de piano</h2>
+    <p>Galerie d’exposition de mes vidéos de piano avec interface moderne et performances optimisées.</p>
+    <p class="stack">React, TypeScript, Material UI, CI/CD</p>
+    <a href="https://jean-emmanuel-diap.com/piano-gallery" target="_blank" class="btn primary" rel="noopener">Voir en ligne</a>
+  </article>
+
+  <article class="project-card large">
+    <img src="assets/img/ecommerce.png" alt="E-commerce distribué" class="project-image">
+    <h2>E-commerce distribué</h2>
+    <p>Système e-commerce en architecture hexagonale avec microservices Spring Boot interconnectés via REST et Kafka.</p>
+    <p class="stack">Java, Spring Boot, Kafka, JPA, Maven, Docker, Architecture Hexagonale, Microservices</p>
+  </article>
+
+</section>
+
+<h2 class="section-subtitle gradient-underline">Autres projets</h2>
+<section class="other-projects-grid">
+
+  <article class="small-card">
+    <h3>Facial Expression Classification</h3>
+    <p>Classification d’émotions par deep learning à partir d’images faciales.</p>
+    <p class="stack">Python, TensorFlow, Keras, Jupyter</p>
+    <a href="https://github.com/JeanEmmanuel01/facial_expression_classification" target="_blank" rel="noopener">Voir sur GitHub</a>
+  </article>
+
+  <article class="small-card">
+    <h3>Proxy Flopbox</h3>
+    <p>Proxy réseau en Java pour transferts et gestion de connexions.</p>
+    <p class="stack">Java, Réseau, Sockets</p>
+    <a href="https://github.com/JeanEmmanuel01/proxy-flopbox" target="_blank" rel="noopener">Voir sur GitHub</a>
+  </article>
+
+  <article class="small-card">
+    <h3>Compiler</h3>
+    <p>Compilateur minimaliste en Python avec analyse lexicale et syntaxique.</p>
+    <p class="stack">Python, Parsing</p>
+    <a href="https://github.com/JeanEmmanuel01/compiler" target="_blank" rel="noopener">Voir sur GitHub</a>
+  </article>
+
+  <article class="small-card">
+    <h3>Chess</h3>
+    <p>Jeu d’échecs et règles en Smalltalk, approche TDD.</p>
+    <p class="stack">Smalltalk, OOP, Tests</p>
+    <a href="https://github.com/JeanEmmanuel01/Chess" target="_blank" rel="noopener">Voir sur GitHub</a>
+  </article>
+
 </section>
 
 </main>
 <footer class="site-footer">
   <div class="container footer-inner">
-    <span>© 2025 Jean Emmanuel Ehuy</span>
+    <span>© 2025 Jean Emmanuel Ehuy — Portfolio</span>
     <div class="footer-links">
       <a href="https://linkedin.com/in/jean-emmanuel-ehuy-01655a254" target="_blank" rel="noopener">LinkedIn</a>
       <a href="contact.html">Me contacter</a>
     </div>
   </div>
 </footer>
-<script src="assets/js/theme.js"></script>
+
 <script>
   const path = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.nav-link').forEach(a => {
-    const href = a.getAttribute('href');
-    if ((path === '' && href === 'index.html') || path === href) a.classList.add('active');
-  });
+  document.querySelectorAll('.nav-link').forEach(a=>{ if((path===''&&a.getAttribute('href')==='index.html')||path===a.getAttribute('href')) a.classList.add('active'); });
 </script>
 </body>
 </html>
