@@ -28,6 +28,56 @@
 
 <h1 class="page-title gradient-underline">Projets</h1>
 
+<h2 class="section-subtitle gradient-underline">Intelligence artificielle</h2>
+<section class="other-projects-grid">
+
+  <article class="small-card">
+    <h3>mcp-mail-agent</h3>
+    <p>Agent mail agentique construit avec LangGraph et le Model Context Protocol. Tient une conversation normale, rédige des mails, et s'interrompt pour une validation humaine explicite avant tout envoi.</p>
+    <p class="stack">Python, LangGraph, MCP, LLM</p>
+    <a href="https://github.com/JeanEmmanuel01/mcp-mail-agent" target="_blank" rel="noopener">Voir sur GitHub</a>
+  </article>
+
+  <article class="small-card">
+    <h3>rag-clothing-assistant</h3>
+    <p>Chatbot RAG pour une boutique de vêtements en ligne. Aiguille les requêtes entre une FAQ et un catalogue produits indexé dans Weaviate, avec recherche sémantique filtrée par métadonnées.</p>
+    <p class="stack">Python, RAG, Weaviate, Together AI</p>
+    <a href="https://github.com/JeanEmmanuel01/rag-clothing-assistant" target="_blank" rel="noopener">Voir sur GitHub</a>
+  </article>
+
+  <article class="small-card">
+    <h3>facial_expression_classification</h3>
+    <p>Classification supervisée d'émotions faciales à partir de landmarks CK+. Compare plusieurs stratégies de features et de classifieurs, ~0.93 d'accuracy sur l'approche par vecteurs de déplacement.</p>
+    <p class="stack">Python, scikit-learn, SHAP, imbalanced-learn</p>
+    <a href="https://github.com/JeanEmmanuel01/facial_expression_classification" target="_blank" rel="noopener">Voir sur GitHub</a>
+  </article>
+
+</section>
+
+<h2 class="section-subtitle gradient-underline">Book Club</h2>
+<section class="projects-grid">
+
+  <article class="project-card large">
+    <div class="carousel" id="bookclub-carousel">
+      <div class="carousel-track">
+        <img src="assets/img/bookclub-1.png" alt="Book Club — page d'accueil">
+        <img src="assets/img/bookclub-2.png" alt="Book Club — connexion">
+        <img src="assets/img/bookclub-3.png" alt="Book Club — fil d'actualité et recommandations">
+        <img src="assets/img/bookclub-4.png" alt="Book Club — amis et chat privé">
+        <img src="assets/img/bookclub-5.png" alt="Book Club — chat de groupe">
+      </div>
+      <button class="carousel-btn prev">&#10094;</button>
+      <button class="carousel-btn next">&#10095;</button>
+    </div>
+    <h2>Book Club — système microservices</h2>
+    <p>Application distribuée de club de lecture : backend Spring Boot (Spring Cloud Gateway, Eureka, Keycloak, RabbitMQ), frontend Angular et déploiement Docker Compose, répartie sur trois dépôts.</p>
+    <p class="stack">Spring Boot, Spring Cloud, Keycloak, RabbitMQ, Angular, Docker</p>
+    <a href="https://github.com/Friends-Book-Club/Friends-Book-Club" target="_blank" class="btn primary" rel="noopener">Voir sur GitHub</a>
+  </article>
+
+</section>
+
+<h2 class="section-subtitle gradient-underline">Autres projets</h2>
 <section class="projects-grid">
 
   <article class="project-card large">
@@ -37,8 +87,8 @@
         <img src="assets/img/01901237-d785-4523-89f1-00cbcca2ef2c.png" alt="Expense App 2">
         <img src="assets/img/c5303c0e-6482-407d-a32e-fe3261d0c341.png" alt="Expense App 3">
       </div>
-      <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
-      <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+      <button class="carousel-btn prev">&#10094;</button>
+      <button class="carousel-btn next">&#10095;</button>
     </div>
     <h2>Gestion de dépenses étudiantes</h2>
     <p>Application web pour aider les étudiants à gérer leurs dépenses et optimiser leurs économies.</p>
@@ -54,23 +104,15 @@
     <a href="https://jean-emmanuel-diap.com/piano-gallery" target="_blank" class="btn primary" rel="noopener">Voir en ligne</a>
   </article>
 
-  <article class="project-card large">
-    <img src="assets/img/ecommerce.png" alt="E-commerce distribué" class="project-image">
-    <h2>E-commerce distribué</h2>
-    <p>Système e-commerce en architecture hexagonale avec microservices Spring Boot interconnectés via REST et Kafka.</p>
-    <p class="stack">Java, Spring Boot, Kafka, JPA, Maven, Docker, Architecture Hexagonale, Microservices</p>
-  </article>
-
 </section>
 
-<h2 class="section-subtitle gradient-underline">Autres projets</h2>
 <section class="other-projects-grid">
 
   <article class="small-card">
-    <h3>Facial Expression Classification</h3>
-    <p>Classification d’émotions par deep learning à partir d’images faciales.</p>
-    <p class="stack">Python, TensorFlow, Keras, Jupyter</p>
-    <a href="https://github.com/JeanEmmanuel01/facial_expression_classification" target="_blank" rel="noopener">Voir sur GitHub</a>
+    <h3>E-commerce distribué</h3>
+    <p>Système e-commerce en architecture hexagonale avec microservices Spring Boot interconnectés via REST et Kafka.</p>
+    <p class="stack">Java, Spring Boot, Kafka, JPA, Maven, Docker, Architecture Hexagonale, Microservices</p>
+    <a href="https://github.com/JeanEmmanuel01/microservice-e-commerce" target="_blank" rel="noopener">Voir sur GitHub</a>
   </article>
 
   <article class="small-card">
@@ -85,13 +127,6 @@
     <p>Compilateur minimaliste en Python avec analyse lexicale et syntaxique.</p>
     <p class="stack">Python, Parsing</p>
     <a href="https://github.com/JeanEmmanuel01/compiler" target="_blank" rel="noopener">Voir sur GitHub</a>
-  </article>
-
-  <article class="small-card">
-    <h3>Chess</h3>
-    <p>Jeu d’échecs et règles en Smalltalk, approche TDD.</p>
-    <p class="stack">Smalltalk, OOP, Tests</p>
-    <a href="https://github.com/JeanEmmanuel01/Chess" target="_blank" rel="noopener">Voir sur GitHub</a>
   </article>
 
 </section>

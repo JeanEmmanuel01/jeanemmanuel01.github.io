@@ -15,7 +15,7 @@ html[data-theme="dark"] { --bg:#000000; --fg:#e5e7eb; --muted:#9ca3af; --card:#0
 .title{font-size:clamp(28px,4vw,42px);line-height:1.15;margin:0 0 10px}
 .gradient-text{background:linear-gradient(135deg,var(--accent-start),var(--accent-end));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:800}
 .subtitle{color:var(--muted);margin:0 0 8px;font-weight:600}
-.index-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.index-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
 .index-card {
   background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px;
 }
